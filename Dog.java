@@ -11,6 +11,11 @@ public class Dog
     this.ID = numDogs * numDogs;
   }
   // Default Dog constructor
+  public Dog() {
+    name = "Fidough";
+    numDogs++;
+    ID = 0000;
+  }
 
   // Setters - instance variables only
   public void setName(String name) {
@@ -30,4 +35,8 @@ public class Dog
   }
 
   // method getNumDogs
+
+  public static int getNumDogs() {
+    return numDogs;
+  }
 }

@@ -12,14 +12,25 @@ public class Main
       input = sc.nextLine();
       if (input.equals("default"))
       {
-        // create default car
+        Car defaultCar = new Car();
+        System.out.println("\n" + defaultCar + "\n"); 
       }
       else
       {
-        // ask for model, year, miles per gallon
+        if (!input.equals("q")) {
+          System.out.println("Model of the car: ");
+          String model = sc.nextLine();
+          System.out.println("Year of the car: ");
+          int year = sc.nextInt();
+          System.out.println("Miles per gallon of the car: ");
+          double mpg = sc.nextDouble();
+          sc.nextLine();
+          Car customCar = new Car(input, model, year, mpg);
+          System.out.println("\n" + customCar + "\n"); 
+        
+        }
       }
-
-      System.out.println(); // print out the car object
     }
+    sc.close();
   }
 }
