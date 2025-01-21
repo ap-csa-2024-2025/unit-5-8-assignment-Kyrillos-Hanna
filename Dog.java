@@ -14,7 +14,7 @@ public class Dog
   public Dog() {
     name = "Fidough";
     numDogs++;
-    ID = 0000;
+    ID = 0;
   }
 
   // Setters - instance variables only
